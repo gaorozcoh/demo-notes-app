@@ -1,0 +1,25 @@
+npx aws-api-gateway-cli-test \
+--username=admin@example.com \
+--password=Passw0rd! \
+--user-pool-id=us-east-1_l0vq2HHFJ \
+--app-client-id=60v93iakojubia47r2ktai5cld \
+--cognito-region=us-east-1 \
+--identity-pool-id=us-east-1:8b4b0e21-1ee0-4cf5-bd8e-83b76b21ecb7 \
+--invoke-url=https://d2v6lr2eic.execute-api.us-east-1.amazonaws.com \
+--api-gateway-region=us-east-1 \
+--path-template=/notes \
+--method=POST \
+--body="{\"content\":\"hello world\",\"attachment\":\"hello.jpg\"}"
+
+npx aws-api-gateway-cli-test \
+--username=admin@example.com \
+--password=Passw0rd! \
+--user-pool-id=us-east-1_l0vq2HHFJ \
+--app-client-id=60v93iakojubia47r2ktai5cld \
+--cognito-region=us-east-1 \
+--identity-pool-id=us-east-1:8b4b0e21-1ee0-4cf5-bd8e-83b76b21ecb7 \
+--invoke-url=https://d2v6lr2eic.execute-api.us-east-1.amazonaws.com \
+--api-gateway-region=us-east-1 \
+--path-template=/billing \
+--method=POST \
+--body="{\"source\":\"tok_visa\",\"storage\":21}"
