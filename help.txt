@@ -24,4 +24,6 @@ npx aws-api-gateway-cli-test \
 --method=POST \
 --body="{\"source\":\"tok_visa\",\"storage\":21}"
 
-git add . && git commit -m "Enabling CORS" && git push
+git add . && git commit -m "Setting up our React app" && git push
+
+npx create-react-app frontend --use-npm && cd frontend
